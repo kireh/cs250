@@ -19,7 +19,6 @@ Specific technical requirements include:
   a. Do not display messages that you sent.
 7. Continue operating until the user terminates the program.
 
-
 (Server)
 1. Accept hostname or IP address & port number as parameters
 2. Open a UDP Socket (report errors).
@@ -27,4 +26,10 @@ Specific technical requirements include:
 4. Send the received message to all clients using a broadcast.
   a. There are two valid ways to send using a broadcast address. Either is fine for this project.
   b. Ensure that you set the correct socket structure options so that you have permissions to use a broadcast.
-5. Continue operating until the user terminates the program.
+5. Add the necessary logic so that the server can be added as a daemon/service in the operating system.
+
+(Service Details)
+Provide a plain text file that contains:
+1. What your target operating system was (used to compile, etc.).
+2. Details on how to add your server program to the 'daemon/service' subsystem given the target OS
+  a. Don't forget to tell me where to place your compiled program!
